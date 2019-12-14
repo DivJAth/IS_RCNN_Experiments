@@ -1,7 +1,7 @@
 Requirements:
 1. Install torch, torch vision
 2. git clone git@github.com:DivJAth/IS_RCNN_Experiments.git
-3. Demo in IS_RCNN_Experiments/vision/torchvision/models/detection/faster_rcnn_experiment.ipynb
+3. Demo: IS_RCNN_Experiments/vision/torchvision/models/detection/faster_rcnn_experiment.ipynb
 
 Files where the code was changed to integrate fast-rcnn and kalman filter
 >a. Integration of Kalman filter and fast-rcnn  
