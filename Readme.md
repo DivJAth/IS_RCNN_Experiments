@@ -11,7 +11,7 @@ Files where the code was changed to integrate fast-rcnn and kalman filter
    >> IS_RCNN_Experiments/vision/torchvision/models/detection/sort.py
 
 <p align="center">
-  <img src="results.gif" alt="Object Tracking with Fast-RCNN" height="300" width="400" />
+  <img src="results.gif" alt="Object Tracking with Fast-RCNN" height="700" width="900" />
   <p align="center">Sample output from Object Tracking with Fast-RCNN</p>
 </p>
 
