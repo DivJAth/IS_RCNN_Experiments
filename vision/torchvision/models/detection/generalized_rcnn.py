@@ -82,7 +82,7 @@ class GeneralizedRCNN(nn.Module):
 #             print("proposal",proposals, proposal_losses)
             print("Run features through the roi:")
             detections, detector_losses = self.roi_heads(features, proposals, images.image_sizes, targets)
-            print("format for detector_losses", detector_losses)
+#             print("format for detector_losses", detector_losses)
 #             print("before postprocess",detections)
             detections = self.transform.postprocess(detections, images.image_sizes, original_image_sizes)
 #             print("after postprocess",detections)
@@ -99,13 +99,13 @@ class GeneralizedRCNN(nn.Module):
                 trans_detection.append( i + [j, j,k])
             self.trans_detection = Tensor(trans_detection)
             self.tracked_objects = self.mot_tracker.update(self.trans_detection.cpu())
-            print("tracked", self.tracked_objects)
+#             print("tracked", self.tracked_objects)
         else:
 #           trans_detection = self.prev_trans_detection
 #             self.tracked_objects = self.mot_tracker.update(self.tracked_objects,True)
             self.tracked_objects = self.mot_tracker.update(self.trans_detection,True)
 
-            print("tracked withou prediction", self.tracked_objects)
+#             print("tracked withou prediction", self.tracked_objects)
             
 #         print("trans_detection", trans_detection)
 #         tracked_objects = self.mot_tracker.update(trans_detection.cpu())
@@ -143,7 +143,7 @@ class GeneralizedRCNN(nn.Module):
         detection_with_tracker["labels"]=IntTensor(detection_with_tracker["labels"])
         detection_with_tracker["tracker_id"]=IntTensor(detection_with_tracker["tracker_id"])
         
-        print(detection_with_tracker)  
+#         print(detection_with_tracker)  
           
 
         if torch.jit.is_scripting():

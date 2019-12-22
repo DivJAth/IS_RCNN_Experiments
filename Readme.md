@@ -10,6 +10,10 @@ Files where the code was changed to integrate fast-rcnn and kalman filter
 >b. Kalman-filter and Hungarian Algorithm for tracking and detection.
    >> IS_RCNN_Experiments/vision/torchvision/models/detection/sort.py
 
+<p align="center">
+  <img src="results.gif" alt="Object Tracking with Fast-RCNN" height="300" width="400" />
+  <p align="center">Sample output from Object Tracking with Fast-RCNN</p>
+</p>
 
 Reference:
 1. SORT: A Simple, Online and Realtime Tracker Copyright (C) 2016 Alex Bewley alex@dynamicdetection.com
